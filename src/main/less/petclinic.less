@@ -18,9 +18,10 @@
 @spring-brown:      #34302D;
 @spring-grey:       #838789;
 @spring-light-grey: #f1f1f1;
+@spring-dark-grey: #0d0d0d;
 
-@body-bg:                           @spring-light-grey;
-@text-color:                        @spring-brown;
+@body-bg:                           @spring-dark-grey;
+@text-color:                        @spring-light-grey;
 @link-color:                        @spring-dark-green;
 @link-hover-color:                  @spring-dark-green;
 
@@ -48,6 +49,10 @@
 @pagination-active-bg:                    @spring-brown;
 @pagination-active-border:                @spring-green;
 @table-border-color:                      @spring-brown;
+
+p, label, td, h1, h2, h3, h4, h5 {
+  color: @spring-light-grey !important;
+}
 
 .table > thead > tr > th {
   background-color: lighten(@spring-brown, 3%);
