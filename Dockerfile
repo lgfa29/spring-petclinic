@@ -5,5 +5,5 @@ CMD ["./mvnw", "package"]
 
 FROM openjdk:8
 WORKDIR /root
-COPY --from=build /usr/src/app/target/spring-petclinic-2.0.jar .
-CMD ["java", "-jar", "./spring-petclinic-2.0.jar"]
+COPY --from=build /usr/src/app/target/spring-petclinic-2.1.jar .
+CMD ["java", "-jar", "./spring-petclinic-2.1.jar"]
