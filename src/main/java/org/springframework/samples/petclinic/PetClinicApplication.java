@@ -28,8 +28,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(proxyBeanMethods = false)
 public class PetClinicApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PetClinicApplication.class, args);
+	public static void main(String[] args) throws Exception {
+		throw new Exception("Olá, eu sou um bug :)");
+		// SpringApplication.run(PetClinicApplication.class, args);
 	}
 
 }
